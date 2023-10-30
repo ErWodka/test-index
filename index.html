@@ -1,0 +1,38 @@
+.<html>
+    <head>
+
+    </head>
+    <style>
+    </style>    <body>
+        <p id="testo" style="color: blueviolet; background-color: rgb(255, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: x-large;">
+            Modello di presentazione!
+        </p>
+        <div style="display: flex; align-items: center;">
+            <img id="immagine" src="images/download.jpg" style="width: 500px;">
+            <p id='didascalia' style="margin-left: 10px;">Questa è un immagine </p>
+        </div>
+
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          <script>
+            var testo = document.getElementById("testo");
+
+            testo.addEventListener("click", function () {
+                // Coordinate del punto sulla mappa (sostituisci con le tue coordinate)¨
+                var lat = 40.7128; // Latitudine
+                var lon = -74.0060; // Longitudine
+
+                // URL della mappa con le coordinate
+                var mapUrl = "https://www.google.com/maps?q=" + lat + "," + lon;
+
+                // Apri una nuova finestra del browser con la mappa
+                window.open(mapUrl, "_blank");
+            })
+        </script>
+        <script src="js/imageScript.js"></script>
+    </body>
+</html>
